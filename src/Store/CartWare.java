@@ -53,7 +53,7 @@ public class CartWare extends Ware {
     @Override
     public String toString()
     {
-        String ret = String.valueOf(inCartCount) + "x " + this.getName() + " " + this.getQuantity() + " " + getUnit().toString() + " - " + this.getOriginalPrice();
+        String ret = String.valueOf(inCartCount) + "x " + this.getName() + " (" + this.getQuantity() + " " + getUnit().toString() + ") - " + this.getOriginalPrice();
         return ret;
     }
 }

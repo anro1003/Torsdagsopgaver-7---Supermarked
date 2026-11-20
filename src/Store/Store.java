@@ -105,16 +105,16 @@ public class Store {
         System.out.println("===== Here is your reciept =====");
         for(CartWare cartWare : cartWares)
         {
-            System.out.println(cartWare.toString());
+            System.out.println(cartWare.toString() + "kr");
             if(cartWare.isDiscounted())
             {
-                System.out.println(cartWare.getDiscountString());
+                System.out.println(cartWare.getDiscountString() + "kr");
             }
         }
         double rawTotal = calculateTotal(cartWares);
         double vat = rawTotal*0.25;
         System.out.println("Total: " + rawTotal);
-        System.out.println("VAT (25%) makes up: " + vat);
+        System.out.println("VAT (25%) makes up: " + vat + "kr");
         System.out.println("===========");
     }
 
